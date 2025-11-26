@@ -1,26 +1,31 @@
-ECHO is on.
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>User Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <form id="registration-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
+    <div id="quiz-container">
+        <p id="quiz-question">What is 2 + 2?</p>
+        <div>
+            <input type="radio" id="choice1" name="quiz" value="4">
+            <label for="choice1">4</label><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
+            <input type="radio" id="choice2" name="quiz" value="22">
+            <label for="choice2">22</label><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
+            <input type="radio" id="choice3" name="quiz" value="3">
+            <label for="choice3">3</label>
+        </div>
 
-        <button type="submit">Register</button>
-        <div id="form-feedback"></div>
-    </form>
+        <button id="submit-answer">Submit Answer</button>
+        <p id="feedback"></p>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
+
 </html>
